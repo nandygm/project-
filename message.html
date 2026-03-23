@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Secret Message For You</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container message-page">
+        <h1 class="title page-title" id="mainTitle">A Gift For You..</h1>
+        <div id="giftBox" class="gift-container">
+            <span class="gift-box-icon" id="giftIconElement">🎁</span>
+            <p class="gift-text" id="giftTextElement">Tap to open your gift!</p>
+        </div>
+
+        <div id="firstGiftReveal" class="hidden-element" style="flex-direction: column; align-items: center; justify-content: center; min-height: 60vh;">
+            <div class="card glass" style="padding: 40px; width: 100%; max-width: 500px; animation: slideUpFade 1s forwards;">
+                <p style="text-align: center; font-size: 2.2rem; font-family: 'Dancing Script', cursive; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); line-height: 1.5; margin-bottom: 30px;">"na un pakathula thana la irukke thakkaali"</p>
+                <div style="text-align: center;">
+                    <button id="aduthuPolamBtn" class="glow-on-hover primary-btn">aduthu polam vaa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-message" class="container message-page view-container hidden">
+        <h1 class="title page-title">A Secret Message For You</h1>
+        
+        <div id="giftLoginArea" class="premium-reveal" style="text-align: center; margin-top: 50px;">
+            <div class="card glass" style="padding: 40px; display: inline-block;">
+                <p style="color: #fff; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-size: 1.2rem;">Enter the magic words to unlock:</p>
+                <input type="password" id="giftPassword" placeholder="Password..." class="login-input" style="width: 250px;">
+                <br>
+                <button id="unlockGiftBtn" class="glow-on-hover primary-btn" style="margin-top: 20px; width: 160px; height: 45px; font-size: 1.1rem;">Unlock</button>
+                <p id="giftError" style="color: #ffb6c1; margin-top: 15px; display: none;">Oops, try again! 🥺</p>
+            </div>
+            
+            <p id="giftSuccess" class="hidden-element animated-text" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; font-size: 3rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.8); z-index: 9999; margin: 0;">You did it! ✨</p>
+        </div>
+
+        <div id="secretLetter" class="letter-container old-paper hidden">
+            <div class="love-letter">
+                <p>💕 There are so many people in this world, but somehow life chose you for me. And that is the most beautiful thing and special feel that has ever happened in my life.</p>
+
+                <p>You became the person I want to tell everything to… the person whose messages I wait for every day.</p>
+
+                <p>You are not just someone I love, you are someone who made me understand what love actually feels like.</p>
+
+                <p>And maybe I don’t always say or show this enough, but you mean so much more to me than you will ever realize.</p>
+
+                <p>One thing I truly want to say about you is your smile. Your smile has a way of making everything around me feel lighter and happier thakkaali.. ipo kuda siruchukite thana read pandra theriyuthu.</p>
+
+                <p>If someday life becomes difficult for us, if we face misunderstandings or hard times, I hope you will remember one thing — there is someone in this world who truly loves you with her whole heart and that someone is me ra pillu kuttuu.</p>
+
+                <p>I hope you will also remember our beautiful moments together and the love we share cheriya?</p>
+
+                <p>All I want in return is something very simple — I want to see you smile I want you to always feel happy around me. I want to be someone who brings peace and happiness into your life, just like you brought into mine. 🫂</p>
+
+                <div class="warning-section">
+                    <p>seri last ah oru important warning</p>
+                    <p>indha website ku romba emotional aagi enna innum adhigama love panna start pannina… adhuku naa responsible illa 😌</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
